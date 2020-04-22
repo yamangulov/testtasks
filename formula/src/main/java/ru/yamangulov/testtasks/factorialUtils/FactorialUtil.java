@@ -3,6 +3,7 @@ package ru.yamangulov.testtasks.factorialUtils;
 import java.math.BigInteger;
 
 public class FactorialUtil {
+    // отказ от рекурсии - сознательный, чтобы не плодить переменные, особенно для больших чисел
     private static BigInteger factorial(int m) {
         BigInteger factorial = BigInteger.ONE;
         for (int i = 1; i <= m; ++i) factorial = factorial.multiply(BigInteger.valueOf(i));
